@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1 border="1px" align="center" width="70%"> HOME </h1>
+<br>
+<br>
+<form action="/input/" method="post">
+    {%csrf_token%}
+    <button>UPLOAD CSV FILE TO DATABASE</button>
+</form>
+<br>
+<form action="/home2/" method="post">
+    {%csrf_token%}
+    <button>GET DATABASE DATA</button>
+</form>
+<br>
+<form action="/delete/" method="post">
+    {%csrf_token%}
+    <button>DELETE ALL DATABASE DATA</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> HOME 2 </title>
+</head>
+<body>
+<h1 border="1px" align="center" width="70%"> HOME </h1>
+<br>
+<br>
+<form action="/save1/" method="post">
+    {%csrf_token%}
+    <button>GET IN .csv FORMAT</button>
+</form>
+<br>
+<form action="/save2/" method="post">
+    {%csrf_token%}
+    <button>GET IN .sqlite FORMAT</button>
+</form>
+<br>
+<form action="/" method="post">
+    {%csrf_token%}
+    <button>BACK</button>
+</form>
+</body>
+</html>

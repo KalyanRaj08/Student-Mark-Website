@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1 border="1px" align="center" width="70%"> UPLOAD FILE </h1>
+<h4 border="1px" align="center" width="70%">Fill question numbers comma seperated in the CO divisions needed!! Fill '-' on the CO divisions which are not needed!!</h4>
+<form action="/acceptfile/"  method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    <table>{{forms}}</table>
+    <button>UPLOAD</button>
+</form>
+<form action="/" method="post">
+    {%csrf_token%}
+    <button>BACK</button>
+</form>
+<div>
+    {%for m in messages%}
+    <h3>{{m}}</h3>
+    {%endfor%}
+</div>
+</body>
+</html>
